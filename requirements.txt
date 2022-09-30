@@ -1,0 +1,4 @@
+crossref_commons
+PyPDF2
+unicodedata
+readline

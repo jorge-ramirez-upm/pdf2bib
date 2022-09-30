@@ -1,0 +1,9 @@
+echo off 
+REM CREATE TEMPORARY FOLDER
+set BUILDFOLDER=build
+if not exist %BUILDFOLDER% mkdir %BUILDFOLDER%
+
+REM CREATE WHEEL CORRESPONDING TO OUR APPLICATIOn
+del %BUILDFOLDER%\*.whl
+python setup.py bdist_wheel --dist-dir %BUILDFOLDER%
+
